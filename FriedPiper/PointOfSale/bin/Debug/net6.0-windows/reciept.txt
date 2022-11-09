@@ -1,0 +1,57 @@
+Order# 1
+Ordered At: 10/25/2022 2:09:59 PM
+Piper Platter12.00
+Small Fried Bananas3.75
+Fried Chocolate Ice Cream3.50
+Small Apple Fritters3.00
+Subtotal: 22.25
+Tax: 2.0025
+Total: 24.2525
+Payment Method: Cash
+25.75
+
+--------------------------------------
+
+Order# 1
+Ordered At: 10/25/2022 2:10:53 PM
+Small Fried Bananas3.75
+Fried Chocolate Ice Cream3.50
+Small Apple Fritters3.00
+Piper Platter12.00
+Small Fried Cheesecake3.75
+Fried Butter Fingers2.50
+Small Popper Platter12.00
+Subtotal: 40.50
+Tax: 3.6450
+Total: 44.1450
+Payment Method: Cash
+5.85
+
+--------------------------------------
+
+Order# 2
+Ordered At: 10/25/2022 2:11:09 PM
+Small Fried Cheesecake3.75
+Fried Chocolate Ice Cream3.50
+Small Popper Platter12.00
+Subtotal: 19.25
+Tax: 1.7325
+Total: 20.9825
+Payment Method: Cash
+79.02
+
+--------------------------------------
+
+Order# 1
+Ordered At: 10/27/2022 12:03:58 PM
+Fried Cherry Pie3.50
+Medium Fried Bananas4.50
+Large Popper Platter20.00
+Subtotal: 28.00
+Tax: 2.5200
+Total: 30.5200
+Payment Method: Cash
+Change Owed: 2.48
+
+--------------------------------------
+

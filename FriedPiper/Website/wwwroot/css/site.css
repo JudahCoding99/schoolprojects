@@ -1,0 +1,192 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+div {
+    color: white;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  background-image: url(Sandpiper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Papyrus;
+    background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-family: 'MV Boli';
+    border-bottom: 2px solid mediumpurple;
+}
+
+p.aboutpara {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style-type: none;
+    border-bottom: 1px solid lightgray;
+    text-emphasis-color: #FFFFFF;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+p.PrivacyBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style-type: none;
+    border-bottom: 1px solid lightgray;
+    color: white;
+}
+
+ul.treats-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    border-top: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    list-style-type: none;
+}
+
+ul.poppers-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    border-top: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    list-style-type: none;
+}
+
+ul.platters-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    border-top: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    list-style-type: none;
+}
+
+
+
+div.menu-item {
+    min-height: 50px;
+    min-width: 100px;
+    margin: 5px;
+}
+
+.name {
+    font-size: 16pt;
+}
+
+.price {
+    font-size: 12pt;
+    color: firebrick;
+    display: flex;
+}
+
+.calories {
+    font-size: 12pt;
+}
+
+#tag-line {
+    font-size: 20pt;
+    color: firebrick;
+    text-align: center;
+    font-style: italic;
+}
+
+#filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+#search {
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+pre {
+    color: white;
+}
+
+.list {
+    margin: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient( to bottom, mediumpurple, rgba(0, 0, 0, 0) ) 1 100%;
+}
+
+
+
+

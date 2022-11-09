@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>FriedPiper.Data</RootNamespace>
+    <AssemblyName>FriedPiper.Data</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="KSU.CS.CodeAnalyzers" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>

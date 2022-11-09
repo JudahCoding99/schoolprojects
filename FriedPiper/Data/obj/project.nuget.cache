@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qr0rKVtSB3lEsT9OBR1E9KKlYGRizKgyKznVWIzNgzZbCWWuD+j9pfzY1btXQ37zf4Wv+Xojr031kEpj0fMW8g==",
+  "success": true,
+  "projectFilePath": "U:\\schoolprojects\\FriedPiper\\Data\\Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adeniji\\.nuget\\packages\\ksu.cs.codeanalyzers\\1.0.2\\ksu.cs.codeanalyzers.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

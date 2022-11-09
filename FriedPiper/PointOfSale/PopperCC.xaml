@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="FriedPiper.PointOfSale.PopperCC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FriedPiper.PointOfSale"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:enums="clr-namespace:FriedPiper.Data.Enums;assembly=FriedPiper.Data"
+             xmlns:Pop="clr-namespace:FriedPiper.Data.MenuItems;assembly=FriedPiper.Data"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="830">
+    <UserControl.Resources>
+        <ObjectDataProvider x:Key="Poppers" MethodName="GetValues" ObjectType="{x:Type enums:ServingSize}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="enums:ServingSize"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <ObjectDataProvider x:Key="Glazed" MethodName="GetValues" ObjectType="{x:Type Pop:Popper}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="Pop:Popper"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <Style TargetType="{x:Type ListBoxItem}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <CheckBox Content="{TemplateBinding ContentPresenter.Content}" IsChecked="{Binding Path=IsSelected, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" Height="25"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <StackPanel Background="White" Name="contanItems" >
+
+            <Label Name="typePopper" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="DemiBold" Tag="heading">Customize Popper</Label>
+            <ListBox Name="Size" ItemsSource="{Binding Source={StaticResource Poppers}}" SelectedItem="{Binding Path=Size}" Height="300"/>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="DemiBold" Tag="heading">Glazing</Label>
+            <StackPanel>
+                <CheckBox Name="GlazedCheck" IsChecked="{Binding Path=Glazed}" Height="25" Tag="GlazedCheck">Glazed</CheckBox>
+            </StackPanel>            
+        </StackPanel>
+
+    </Grid>
+</UserControl>

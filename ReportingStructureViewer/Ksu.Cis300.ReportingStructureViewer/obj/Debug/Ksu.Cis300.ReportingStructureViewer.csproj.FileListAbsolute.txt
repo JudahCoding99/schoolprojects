@@ -1,0 +1,13 @@
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\bin\Debug\Ksu.Cis300.ReportingStructureViewer.exe.config
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\bin\Debug\Ksu.Cis300.ReportingStructureViewer.exe
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\bin\Debug\Ksu.Cis300.ReportingStructureViewer.pdb
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\bin\Debug\Ksu.Cis300.TrieLibrary.dll
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\bin\Debug\Ksu.Cis300.TrieLibrary.pdb
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\obj\Debug\Ksu.Cis300.ReportingStructureViewer.csprojAssemblyReference.cache
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\obj\Debug\Ksu.Cis300.ReportingStructureViewer.Properties.Resources.resources
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\obj\Debug\Ksu.Cis300.ReportingStructureViewer.UserInterface.resources
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\obj\Debug\Ksu.Cis300.ReportingStructureViewer.csproj.GenerateResource.cache
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\obj\Debug\Ksu.Cis300.ReportingStructureViewer.csproj.CoreCompileInputs.cache
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\obj\Debug\Ksu.Cis300.ReportingStructureViewer.csproj.CopyComplete
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\obj\Debug\Ksu.Cis300.ReportingStructureViewer.exe
+U:\CIS 300\Homework 5\Ksu.Cis300.ReportingStructureViewer\obj\Debug\Ksu.Cis300.ReportingStructureViewer.pdb

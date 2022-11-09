@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="FriedPiper.PointOfSale.CashPaymentScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FriedPiper.PointOfSale"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="{x:Null}"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="65"/>
+            <Style.Resources>
+                <!--Making Rounded Edges-->
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20" />
+                </Style>
+            </Style.Resources>
+        </Style>
+    </UserControl.Resources>
+    <DockPanel>
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Grid.Column="0">
+                <local:CashPaymentControl Notes="$100" Payed="{Binding Path=CustomerHundreds, Mode=TwoWay}" Owed="{Binding Path=ChangeHundreds}"/>
+                <local:CashPaymentControl Notes="$50" Payed="{Binding Path=CustomerFifties, Mode=TwoWay}" Owed="{Binding Path=ChangeFifties}"/>
+                <local:CashPaymentControl Notes="$20" Payed="{Binding Path=CustomerTwenties, Mode=TwoWay}" Owed="{Binding Path=ChangeTwenties}"/>
+                <local:CashPaymentControl Notes="$10" Payed="{Binding Path=CustomerTens, Mode=TwoWay}" Owed="{Binding Path=ChangeTens}"/>
+                <local:CashPaymentControl Notes="$5" Payed="{Binding Path=CustomerFives, Mode=TwoWay}" Owed="{Binding Path=ChangeFives}"/>
+                <local:CashPaymentControl Notes="$2" Payed="{Binding Path=CustomerTwos, Mode=TwoWay}" Owed="{Binding Path=ChangeTwos}"/>
+                <local:CashPaymentControl Notes="$1" Payed="{Binding Path=CustomerOnes, Mode=TwoWay}" Owed="{Binding Path=ChangeOnes}"/>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Grid.Column="1">
+                <local:CashPaymentControl Notes="$1" Payed="{Binding Path=CustomerDollarCoins, Mode=TwoWay}" Owed="{Binding Path=ChangeDollarCoins}"/>
+                <local:CashPaymentControl Notes="50c" Payed="{Binding Path=CustomerHalfDollarCoins, Mode=TwoWay}" Owed="{Binding Path=ChangeHalfDollarCoins}"/>
+                <local:CashPaymentControl Notes="25c" Payed="{Binding Path=CustomerQuarters, Mode=TwoWay}" Owed="{Binding Path=ChangeQuarters}"/>
+                <local:CashPaymentControl Notes="10c" Payed="{Binding Path=CustomerDimes, Mode=TwoWay}" Owed="{Binding Path=ChangeDimes}"/>
+                <local:CashPaymentControl Notes="5c" Payed="{Binding Path=CustomerNickles, Mode=TwoWay}" Owed="{Binding Path=ChangeNickles}"/>
+                <local:CashPaymentControl Notes="1c" Payed="{Binding Path=CustomerPennies, Mode=TwoWay}" Owed="{Binding Path=ChangePennies}"/>
+            </StackPanel>
+            <DockPanel  Grid.Row="1" Grid.Column="0">
+                <Label Content="Total&#10;Sale:" FontWeight="Bold" Height="50"/>
+                <TextBlock Name="totalSale" TextAlignment="Center" FontSize="15" Width="90" Height="50">
+                    
+                </TextBlock>
+                <Label Content="Amount&#10;     Due:" FontWeight="Bold" Height="50" Width="80"/>
+                <TextBlock Name="amountDue" Background="DarkRed" TextAlignment="Center" FontSize="15" Width="90" Height="50" Text="{Binding Path=CustomerPayment}">
+
+                </TextBlock>
+            </DockPanel>
+            <DockPanel Grid.Row="1" Grid.Column="1">
+                <Label Content="Change&#10;   Owed:" FontWeight="Bold" Height="50"/>
+                <TextBlock Name="changeOwed" TextAlignment="Center" FontSize="15" Background="Green" Width="90" Height="50" Text="{Binding Path=ChangeOwed}">
+
+                </TextBlock>
+                <Button Height="50" Width="130" Click="finishOrder">Finalize Sale</Button>
+            </DockPanel>
+        </Grid>
+    </DockPanel>    
+</UserControl>

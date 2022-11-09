@@ -1,0 +1,139 @@
+<!--
+        <h2>Treats</h2>
+    <ul class="treats-list">
+        @foreach (IMenuItem item in Menu.Treats)
+        {
+            <li>
+                <div class="menu-item">
+                    <h3 class="name">@item.Name</h3>
+                    <div class="price">$@item.Price</div>
+                    <div class="Calories">@item.Calories</div>
+                </div>
+            </li>
+        }
+    </ul>
+
+    <h2>Poppers</h2>
+    <ul class="poppers-list">
+        @foreach (IMenuItem item in Menu.Poppers)
+        {
+            <li>
+                <div class="menu-item">
+
+                    @if (item is Popper p)
+                    {
+                        if (p.Glazed == true)
+                        {
+                            <h3 class="name">Glazed @item.Name </h3>
+                        }
+                        else
+                        {
+                            <h3 class="name">Unglazed @item.Name </h3>
+                        }
+
+                    }
+                    <div class="price">$@item.Price</div>
+                    <div class="Calories">@item.Calories</div>
+                </div>
+            </li>
+        }
+    </ul>
+    <h2>Platters</h2>
+    <ul class="platters-list">
+        @foreach (IMenuItem item in Menu.Platters)
+        {
+            <li>
+                <div class="menu-item">
+                    @if (item is PopperPlatter p)
+                    {
+                        if (p.Glazed == true)
+                        {
+                            <h3 class="name">Glazed @item.Name </h3>
+                        }
+                        else
+                        {
+                            <h3 class="name">Unglazed @item.Name </h3>
+                        }
+
+                    }
+                    else if (item is PiperPlatter x)
+                    {
+                        <h3 class="name">@x.Name</h3>
+                        <div class="price">@x.LeftPie.Name</div>
+                        <div class="price">@x.RightPie.Name</div>
+                        <div class="price">@x.LeftIceCream.Name</div>
+                        <div class="price">@x.RightIceCream.Name</div>
+                    }
+                    <div class="price">$@item.Price</div>
+                    <div class="Calories">@item.Calories</div>
+                </div>
+            </li>
+        }
+    </ul>
+-->
+
+
+
+
+
+@if (item is Popper p)
+            {
+                <li>
+                    <div class="menu-item">
+                        if (p.Glazed == true)
+                        {
+                        <h3 class="name">Glazed @p.Name </h3>
+                        }
+                        else
+                        {
+                        <h3 class="name">Unglazed @p.Name </h3>
+                        }
+                        <div class="price">$@p.Price</div>
+                        <div class="Calories">@p.Calories</div>
+                    </div>
+
+                </li>
+            }
+            else if (!(item is Popper) && !(item is PopperPlatter) && !(item is PiperPlatter))
+            {
+                <li>
+                    <div class="menu-item">
+                        <h3 class="name">@item.Name</h3>
+                        <div class="price">$@item.Price</div>
+                        <div class="Calories">@item.Calories</div>
+                    </div>
+                </li>
+            }
+            else
+            {
+                <li>
+                    <div class="menu-item">
+                        @if (item is PopperPlatter pp)
+                        {
+                            if (pp.Glazed == true)
+                            {
+                                <h3 class="name">Glazed @item.Name </h3>
+                            }
+                            else
+                            {
+                                <h3 class="name">Unglazed @item.Name </h3>
+                            }
+
+                        }
+                        else if (item is PiperPlatter x)
+                        {
+                            <h3 class="name">@x.Name</h3>
+                            <div class="price">@x.LeftPie.Name</div>
+                            <div class="price">@x.RightPie.Name</div>
+                            <div class="price">@x.LeftIceCream.Name</div>
+                            <div class="price">@x.RightIceCream.Name</div>
+                        }
+                        <div class="price">$@item.Price</div>
+                        <div class="Calories">@item.Calories</div>
+                    </div>
+                </li>
+            }
+
+
+
+

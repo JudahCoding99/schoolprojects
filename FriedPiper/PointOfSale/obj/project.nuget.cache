@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IaNkSmrBqX8ZNvlZEqHzD4pEsR++YcEEILwRKPi1AY/nTO6djDaOXTYxlSpqyVzGUKqAw32DmMxkyw/sHEMX2g==",
+  "success": true,
+  "projectFilePath": "U:\\schoolprojects\\FriedPiper\\PointOfSale\\PointOfSale.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adeniji\\.nuget\\packages\\ksu.cs.codeanalyzers\\1.0.2\\ksu.cs.codeanalyzers.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

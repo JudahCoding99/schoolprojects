@@ -1,0 +1,13 @@
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\obj\Debug\Ksu.Cis300.UltimateTicTacToe.csprojAssemblyReference.cache
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\obj\Debug\Ksu.Cis300.UltimateTicTacToe.UltimateTicTacToe.resources
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\obj\Debug\Ksu.Cis300.UltimateTicTacToe.Properties.Resources.resources
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\obj\Debug\Ksu.Cis300.UltimateTicTacToe.csproj.GenerateResource.cache
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\obj\Debug\Ksu.Cis300.UltimateTicTacToe.csproj.CoreCompileInputs.cache
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\bin\Debug\Ksu.Cis300.UltimateTicTacToe.exe.config
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\bin\Debug\Ksu.Cis300.UltimateTicTacToe.exe
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\bin\Debug\Ksu.Cis300.UltimateTicTacToe.pdb
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\bin\Debug\System.ValueTuple.dll
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\bin\Debug\System.ValueTuple.xml
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\obj\Debug\Ksu.Cis300.UltimateTicTacToe.csproj.CopyComplete
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\obj\Debug\Ksu.Cis300.UltimateTicTacToe.exe
+U:\CIS 300\Homework 4\Ksu.Cis300.UltimateTicTacToe\obj\Debug\Ksu.Cis300.UltimateTicTacToe.pdb

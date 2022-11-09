@@ -1,0 +1,21 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "KSU.CS.CodeAnalyzers/1.0.2": {}
+    }
+  },
+  "libraries": {
+    "KSU.CS.CodeAnalyzers/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9aq+UFco5Ep1emyPA2d8lN4tgSXwrjc8lhwQquEhGnQmwSOUJyN7ifPk30NR9F3oVHKuDCL5McrioCw4WvJlIg==",
+      "path": "ksu.cs.codeanalyzers/1.0.2",
+      "hashPath": "ksu.cs.codeanalyzers.1.0.2.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,141 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@using FriedPiper.Data;
+@using FriedPiper.Data.MenuItems;
+
+<h1>Fried Piper</h1>
+<div id="tag-line"> 
+    <p>The Finest </p>
+          <p>Of</p>
+    <p>fried Delights!</p>
+</div>
+
+<form>
+    <h4>What to Eat</h4>
+    <div id="search">
+        <input type="text" name="SearchTerms" />
+        <input type="submit" value="Search" />
+    </div>
+
+    <div id="filters">
+        <div>
+            <h4>Calories</h4>
+            <input name="CalorieMin" type="number" min="0" max="3000"
+                   step="10" placeholder="min">
+            to
+            <input name="CalorieMax" type="number" min="0" max="3000"
+                   step="10" placeholder="max" />
+        </div>
+
+
+        <div>
+            <h4>Price</h4>
+            <input name="PriceMin" type="number" min="0" max="25"
+                   step="0.1" placeholder="min">
+            to
+            <input name="PriceMax" type="number" min="0" max="25"
+                   step="0.1" placeholder="max" />
+        </div>
+
+        <div>
+            <h4>Menu Types</h4>
+            @foreach (String mtype in Menu.MenuTypes)
+            {
+                <label>
+                    <input type="checkbox" name="MenuTypes" value="@mtype"
+                           checked="@Model.MenuTypes.Contains(mtype)" />
+                    @mtype
+                </label>
+            }
+        </div>
+    </div>
+
+    <h2>Treats</h2>
+    <ul class="treats-list">
+        @foreach (IMenuItem item in @Model.TreatItems)
+        {
+            <li class="list">
+                <div class="menu-item">
+                    <h3 class="name">@item.Name</h3>
+                    <div class="price">$@item.Price</div>
+                    <div class="Calories">@item.Calories</div>
+                </div>
+            </li>
+        }
+
+    </ul>
+
+    <h2>Poppers</h2>
+    <ul class="poppers-list">
+        @foreach (IMenuItem item in @Model.PopperItems)
+        {
+            @if (item is Popper p)
+            {
+                <li class="list">
+
+                    <div class="menu-item">
+
+                        @if (p.Glazed == true)
+                        {
+                            <h3 class="name">Glazed @p.Name </h3>
+                        }
+                        else
+                        {
+                            <h3 class="name">Unglazed @p.Name </h3>
+                        }
+                        <div class="price">$@item.Price</div>
+                        <div class="Calories">@item.Calories</div>
+
+                    </div>
+                </li>
+            }
+
+        }
+    </ul>
+
+    <h2>Platters</h2>
+    <ul class="platters-list">
+        @foreach (IMenuItem item in @Model.PlatterItems)
+        {
+
+            @if (item is PopperPlatter pp)
+            {
+                <li class="list">
+                    <div class="menu-item">
+                        @if (pp.Glazed == true)
+                        {
+                            <h3 class="name">Glazed @pp.Name </h3>
+                        }
+                        else
+                        {
+                            <h3 class="name">Unglazed @pp.Name </h3>
+                        }
+                        <div class="price">$@item.Price</div>
+                        <div class="Calories">@item.Calories</div>
+                    </div>
+                </li>
+
+            }
+            else if (item is PiperPlatter x)
+            {
+                <li class="list">
+                    <div class="menu-item">
+                        <h3 class="name">@x.Name</h3>
+                        <div class="price">@x.LeftPie.Name</div>
+                        <div class="price">@x.RightPie.Name</div>
+                        <div class="price">@x.LeftIceCream.Name</div>
+                        <div class="price">@x.RightIceCream.Name</div>
+                        <div class="price">$@item.Price</div>
+                        <div class="Calories">@item.Calories</div>
+                    </div>
+                </li>
+            }
+        }
+
+    </ul>
+
+
+</form>

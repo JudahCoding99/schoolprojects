@@ -1,0 +1,6 @@
+U:\CIS 300\Homework 5\Ksu.Cis300.TrieLibrary\bin\Debug\Ksu.Cis300.TrieLibrary.dll
+U:\CIS 300\Homework 5\Ksu.Cis300.TrieLibrary\bin\Debug\Ksu.Cis300.TrieLibrary.pdb
+U:\CIS 300\Homework 5\Ksu.Cis300.TrieLibrary\obj\Debug\Ksu.Cis300.TrieLibrary.csprojAssemblyReference.cache
+U:\CIS 300\Homework 5\Ksu.Cis300.TrieLibrary\obj\Debug\Ksu.Cis300.TrieLibrary.csproj.CoreCompileInputs.cache
+U:\CIS 300\Homework 5\Ksu.Cis300.TrieLibrary\obj\Debug\Ksu.Cis300.TrieLibrary.dll
+U:\CIS 300\Homework 5\Ksu.Cis300.TrieLibrary\obj\Debug\Ksu.Cis300.TrieLibrary.pdb
